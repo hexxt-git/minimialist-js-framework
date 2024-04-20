@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>framework test</title>
+
     <!-- importing framework -->
     <script src="m.js" defer></script>
+
 </head>
 <body>
     <!-- setting part -->
@@ -13,10 +15,15 @@
     <div class="@set head name name2">
         <h1>
             hello
+            <span class="@use name2"></span>
             <span class="@use name"></span>
             <span class="@use name2"></span>
-            <span class="@use name2"></span>
         </h1>
+    </div>
+    <div class="@set footer footercontent">
+        <footer>
+            <div class="@use footercontent"></div>
+        </footer>
     </div>
     
     <!-- coding part -->
@@ -25,7 +32,7 @@
     <div class="@get head aymen"></div>
     <div class="@get head wail"></div>
 
-
+    <div class="@get footer 123"></div>
 </body>
 </html>
 
